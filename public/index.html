@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="css/reset.css">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <script>
+    const scale = 1.0 / window.devicePixelRatio;
+    const text = '<meta name="viewport" content="width=device-width,initial-scale=' + scale + ',user-scalable=no">';
+    document.write(text);
+    document.documentElement.style.fontSize = window.innerWidth / 7.5 + 'px';
+  </script>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>
